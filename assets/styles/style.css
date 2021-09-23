@@ -261,13 +261,13 @@ img {
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 475px) {
+@media screen and (min-width: 220px) and (max-width: 475px) {
   .hero-content {
     position: absolute;
     top: 95%;
     text-align: left;
     line-height: 1;
-    width: 300px;
+   /* width: 300px;*/
     max-width: 320px;
   }
 }
@@ -308,7 +308,7 @@ img {
   outline: none;
 }
 
-@media screen and (min-width: 375px) and (max-width: 475px) {
+@media screen and (max-width: 475px) {
    .white-line {
     width: 300px;
     max-width: 300px;
@@ -541,7 +541,6 @@ img {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  justify-content: center;
   background-color: #c4c4c4;
   padding: 8%;
 }
@@ -556,10 +555,20 @@ img {
 
 .banner {
   background-image: url("../images/billionphotosposter.png");
+  background-position: center;
   width: 370px;
+  max-width: 370px;
   height: 500px;
   background-color: #c4c4c4;
 }
+
+@media screen and (max-width: 475px) {
+  .banner {
+    width: 330px;
+    max-width: 370px
+  }
+}
+
 .banner-content {
   margin-top: 2rem;
   max-width: 400px;
@@ -861,6 +870,16 @@ margin-bottom: 4rem;
   padding-left: 5%;
   padding-right: 5%;
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cta-btn {
   width: 150px;
   height: 50px;
@@ -873,10 +892,18 @@ margin-bottom: 4rem;
   background-color: #fff;
   color: #000;
   border: 1px solid;
-  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 .cta-content {
-  padding-top: 30px;
+  padding: 30px 5px 0px 5px;
  }
 
  @media screen and (min-width: 768px) {
@@ -893,7 +920,7 @@ margin-bottom: 4rem;
 	text-align: center;
 	color: #fff;
 	background-color: #333;
-	padding: 40px 0px;
+	padding: 40px 5px;
 }
 
 .footer-links {

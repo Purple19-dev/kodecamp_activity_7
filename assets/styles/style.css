@@ -1,5 +1,5 @@
 /********* Google fonts *********/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap");
 /*
 --banner-color: #c4c4c4d2;
 - footer dark - #24282B
@@ -7,11 +7,8 @@
 - 300 400 500 900 (normal and italic)
 */
 
-
-
 /********* Variable css *********/
 :root {
- 
   /* min heights */
   --mh-50: 50vh;
   --mh-60: 60vh;
@@ -51,28 +48,28 @@
   --fw-6: 600;
   --fw-9: 900;
   /* Typography */
-  --rubik-font: 'Roboto', sans-serif;
+  --rubik-font: "Roboto", sans-serif;
   /* font sizes */
   --biggest-font-size: 3.5rem;
   --h1-font-size: 2.5rem;
   --h2-font-size: 1.6rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
   /* Z index */
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 768px){
-  :root{
+@media screen and (min-width: 768px) {
+  :root {
     --biggest-font-size: 6rem;
     --h1-font-size: 3.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -111,7 +108,9 @@
 /******** base Styles *********/
 
 /********* css reset ********/
-*,::before,::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -143,7 +142,7 @@ a {
   color: inherit;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
@@ -158,7 +157,7 @@ img {
 /*==********* header *********==*/
 .header {
   width: 100%;
- /* position: fixed; */
+  /* position: fixed; */
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -179,15 +178,15 @@ img {
 .nav-container {
   max-width: auto;
   height: var(--header-height);
-  margin-left:  10%;
+  margin-left: 10%;
   margin-right: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .nav-container {
-    margin-left:  2%;
+    margin-left: 2%;
     margin-right: 2%;
   }
 }
@@ -197,19 +196,18 @@ img {
   color: var(--banner-color);
 }
 
-
-.nav-menu{
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    padding: 1.5rem 0 1rem;
-    text-align: center;
-    background-color: var(--footer-dark);
-    z-index: var(--z-fixed);
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+  background-color: var(--footer-dark);
+  z-index: var(--z-fixed);
 }
 
-.show-menu{
+.show-menu {
   top: var(--header-height);
 }
 
@@ -222,7 +220,8 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-logo, .nav-toggle {
+  .nav-logo,
+  .nav-toggle {
     font-size: 2.5rem;
   }
 }
@@ -235,20 +234,20 @@ img {
   margin: var(--mb-0);
 }
 
-@media  screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .hero-section {
-   background-image: url("../images/hero-bg_sm.jpg");
-   background-position: 67.68% 100%;
-   object-position: 90% 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-image: url("../images/hero-bg_sm.jpg");
+    background-position: 67.68% 100%;
+    object-position: 90% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .hero-section {
-    background-image: url("../images/hero-bg_sm.jpg"); 
+    background-image: url("../images/hero-bg_sm.jpg");
   }
 }
 
@@ -259,8 +258,7 @@ img {
   max-width: 80rem;
 }
 
-
-@media screen and (min-width: 220px) and (max-width: 475px) {
+@media screen and (min-width: 220px) and (max-width: 675px) {
   .hero-content {
     position: absolute;
     top: 95%;
@@ -279,7 +277,6 @@ img {
     line-height: 1.5;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .hero-content {
@@ -317,14 +314,15 @@ img {
   outline: none;
 }
 
-@media screen and (max-width: 475px) {
-   .white-line {
+@media screen and (max-width: 675px) {
+  .white-line {
     width: 300px;
     max-width: 300px;
-   }
+  }
 }
 
-.illustrations-container, .illustrations-texts {
+.illustrations-container,
+.illustrations-texts {
   display: none;
 }
 
@@ -347,13 +345,13 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-.illustrations-texts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
-  width: 500px;
-}
+  .illustrations-texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    width: 500px;
+  }
 }
 
 .illus-text {
@@ -375,31 +373,30 @@ img {
   }
   .illustrations {
     display: flex;
-    margin:  1rem;
+    margin: 1rem;
   }
-  
 }
 
 /********* services section ***********/
 
 .services-section {
-   background-color: #f2f2f2;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* padding-left: 20%;
    padding-right: 20%;*/
 }
 
 .services-content {
- padding: 5%;
+  padding: 5%;
 }
 @media screen and (min-width: 768px) {
- .services-content {
-   max-width: 800px;
- }
+  .services-content {
+    max-width: 800px;
+  }
 }
 
 .faded-header {
@@ -418,7 +415,7 @@ img {
 }
 
 .service-text {
- font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .services-btn {
   width: 150px;
@@ -443,7 +440,6 @@ img {
     padding: auto;
     overflow-x: hidden;
   }
-
 }
 
 .image-container1 {
@@ -459,7 +455,7 @@ img {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .image-container2 {
     line-height: 1.2;
     text-align: left;
@@ -471,13 +467,6 @@ img {
   max-width: 300px;
   height: 250px;
   min-height: 250px;
-}
-@media screen and (min-width: 768px) {
-  .pic {
-   width: 550px;
-   max-width: 800px;
-   height: 400px;
-  }
 }
 
 .img1 {
@@ -495,7 +484,7 @@ img {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .image-text {
     width: 300px;
     max-width: 300px;
@@ -503,10 +492,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
- .image-text {
-   width: 500px;
-   max-width: 500px;
- }
+  .image-text {
+    width: 500px;
+    max-width: 500px;
+  }
 }
 
 .help {
@@ -521,15 +510,13 @@ img {
   font-size: 1.8rem;
 }
 
-
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .help {
     font-size: 1.5rem;
   }
   .tel {
     font-size: 1.2rem;
   }
-  
 }
 
 .contact-container {
@@ -538,14 +525,11 @@ img {
   margin-bottom: 5rem;
 }
 
-@media screen and (max-width: 475px) {
-  
-.contact-container {
-  margin-bottom: 1rem;
+@media screen and (max-width: 675px) {
+  .contact-container {
+    margin-bottom: 1rem;
+  }
 }
-
-}
-
 
 /******** banner section *******/
 .banner-section {
@@ -565,7 +549,7 @@ img {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .banner-section {
     overflow-x: hidden;
   }
@@ -580,10 +564,10 @@ img {
   background-color: #c4c4c4;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .banner {
     width: 330px;
-    max-width: 370px
+    max-width: 370px;
   }
 }
 
@@ -591,15 +575,6 @@ img {
   margin-top: 2rem;
   max-width: 400px;
 }
-
-@media screen and (min-width: 1024px) {
-  .banner-content {
-    margin-top: 6rem;
-    max-width: 600px;
-    margin-left: 2rem;
-  }
-}
-
 
 .banner-header {
   color: #104e92;
@@ -654,11 +629,10 @@ img {
 
 /*********** Our Services ***********/
 
-
 .our-services {
-padding: 2% 5%;
-padding-left: 10%;
-margin-bottom: 4rem;
+  padding: 2% 5%;
+  padding-left: 10%;
+  margin-bottom: 4rem;
 }
 
 .column-header {
@@ -709,26 +683,25 @@ margin-bottom: 4rem;
   font-style: italic;
 }
 
-@media screen and (min-width: 768px){
-  .column-container{
+@media screen and (min-width: 768px) {
+  .column-container {
     display: flex;
     flex-direction: row;
   }
-  
 }
 
 @media screen and (min-width: 1024px) {
   .icon-text {
-   max-width: 800px;
-   font-size: 1.2rem;
+    max-width: 800px;
+    font-size: 1.2rem;
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 675px) {
   .our-services {
     padding: 2% 10%;
     margin-bottom: 3rem;
-    }
+  }
 }
 
 /********* about us section ********/
@@ -750,8 +723,7 @@ margin-bottom: 4rem;
   line-height: 1;
 }
 
-@media screen and (max-width: 475px) {
-
+@media screen and (max-width: 675px) {
   .about-us {
     padding: 15% 0% 10% 0;
     text-align: left;
@@ -794,7 +766,7 @@ margin-bottom: 4rem;
   background-image: url("../images/male5.jpg");
 }
 
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .about-us {
     display: flex;
     flex-direction: column;
@@ -819,9 +791,9 @@ margin-bottom: 4rem;
   .text-con {
     display: flex;
     flex-direction: column;
-     margin-top: 4rem;
-     margin-left: 0;
-     text-align: left;
+    margin-top: 4rem;
+    margin-left: 0;
+    text-align: left;
   }
   .about-header {
     font-size: 1.2rem;
@@ -859,7 +831,6 @@ margin-bottom: 4rem;
     margin-bottom: 0.2rem;
     font-weight: var(--fw-3);
   }
-  
 }
 
 /********** call to action section **********/
@@ -872,7 +843,7 @@ margin-bottom: 4rem;
   padding: 20% 4% 20% 4%;
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .cta-section {
     padding: 10%;
   }
@@ -932,23 +903,23 @@ margin-bottom: 4rem;
 }
 .cta-content {
   padding: 30px 5px 0px 5px;
- }
+}
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .cta-content {
     max-width: 600px;
   }
- }
- 
- /******** footer ***********/
- footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	background-color: #333;
-	padding: 40px 5px;
+}
+
+/******** footer ***********/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 40px 5px;
 }
 
 .footer-links {
@@ -968,7 +939,6 @@ margin-bottom: 4rem;
 
 /********* media queries ******/
 
-
 @media screen and (min-width: 1024px) {
   .hero-content {
     position: absolute;
@@ -977,14 +947,9 @@ margin-bottom: 4rem;
     text-align: left;
     line-height: 1.5;
   }
-  .pic {
+  .image-text {
     width: 400px;
-    max-width: 600px;
-    height: 400px;
-   }
-   .image-text {
-    width: 400px;
-    max-width: 400px;
+    max-width: 450px;
   }
   .banner-content {
     max-width: 380px;
@@ -994,5 +959,50 @@ margin-bottom: 4rem;
 @media screen and (min-width: 768px) {
   .banner-content {
     max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .banner-content {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .banner-content {
+    margin-top: 6rem;
+    max-width: 600px;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) { 
+.pic {
+  width: 500px;
+  max-width: 600px;
+  height: 250px;
+  min-height: 250px;
+}
+.contact-container {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .pic {
+    width: 400px;
+    max-width: 450px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1044px) {
+  .pic {
+    width: 550px;
+    max-width: 800px;
+    height: 400px;
+  }
+  .image-text {
+    width: 500px;
+    max-width: 800px;
   }
 }
